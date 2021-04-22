@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Title:
+% Dante Gerardo Sanchez Torres
+% The Graduate Institute Geneva
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% General setting of the document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=2cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{apacite}
+\AtBeginDocument{\urlstyle{APACsame}}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+\usepackage{threeparttable}
+\usepackage{array,multirow}
+\usepackage{tabulary}
+\usepackage{natbib}
+\usepackage{fancyhdr}
+\usepackage[font={normalsize, bf}, labelfont=bf, compatibility=false]{caption}
+
+\definecolor{RosaMexicano}{RGB}{205,1, 122}
+\hypersetup{urlcolor=RosaMexicano}
+\hypersetup{citecolor=RosaMexicano}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Main page (first page)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+\title{\textbf{Titulo}
+\\
+Subtitulo}
+\author{Dante Gerardo Sanchez Torres\footnote{The Graduate Institute, Geneva}}
+
+    \begin{document}
+    \maketitle
+        \begin{center}
+            \Large{\textbf{Abstract}}
+        \end{center}
+        Texto
+
+        \noindent Keywords: Texto \\
+        \noindent JEL Classification: I2, J13, J22
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Table of contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+    %\newpage
+    %\tableofcontents 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Introduction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+    
+    \newpage
+    \section*{Introduction\label{Introduction}}
+    \addcontentsline{toc}{section}{Introduction}
+    \input{Introduction/Introduction.tex}
+    
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Background
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+    %\newpage
+    \section*{Background\label{Background}}
+    \addcontentsline{toc}{section}{Background}
+    \input{Literature/Background.tex} 
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Literature review
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+    %\newpage
+    \section*{Literature Review\label{LitReview}}
+    \addcontentsline{toc}{section}{Literature Review}
+    \input{Literature/Literature.tex} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Theoretical Background
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+    %\newpage
+    \section*{Theoretical Background\label{Theory}}
+    \addcontentsline{toc}{section}{Theoretical Background}
+    \input{Theory/Theory.tex} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Empirical strategy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+    %\newpage
+    \section*{Data and summary statistics \label{Data}}
+    \addcontentsline{toc}{section}{Data and summary statistics}
+    \input{Empirical/Data.tex}
+    
+    %\newpage
+    \section*{Methodology\label{Meth}}
+    \addcontentsline{toc}{section}{Methodology}
+    \input{Empirical/Methods.tex}
+
+    \section*{Results} 
+    \addcontentsline{toc}{section}{Results}
+    \input{Empirical/Results.tex} 
+        
+    %\newpage
+    \section*{Robustness checks} 
+    \addcontentsline{toc}{section}{Robustness checks}
+    \input{Empirical/Robustness.tex} 
+        
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Conclusions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+    %\newpage
+    \section*{Discussion and Conclusion\label{Conclusion}}
+    \addcontentsline{toc}{section}{Conclusion}
+    \input{Conclusion/Conclusions.tex}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+    
+    \newpage
+    \bibliographystyle{apacite}
+    \bibliography{Bibliography}
+    \addcontentsline{toc}{section}{References} % adds references 
+
+    \newpage
+    \section*{Appendix\label{Appendix}}
+    \addcontentsline{toc}{section}{Appendix}
+    \input{Appendix/Appendix.tex} 
+    \FloatBarrier
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% End of document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+    \end{document}
+
